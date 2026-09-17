@@ -209,7 +209,7 @@ The current evaluation contains 40 held-out test examples.
 
 The previous evaluation run produced:
 
-**Average LLM-judge quality score: 9.75 / 10**
+**Average LLM-judge quality score: 9.79 / 10**
 
 This is an LLM-based quality score, not a conventional 97.5% accuracy measurement.
 
