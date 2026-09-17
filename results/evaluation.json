@@ -1,0 +1,606 @@
+{
+  "num_evaluated": 40,
+  "average_score": 9.75,
+  "results": [
+    {
+      "id": 92,
+      "email": "I'm planning a birthday party for this weekend. Would you prefer Friday or Saturday?",
+      "reference_reply": "Sure I'm in.",
+      "generated_reply": "Either works for me — I slightly prefer Saturday.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly answers the question with a clear, polite preference for Saturday; it contains no incorrect claims and appropriately addresses the request."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 42,
+      "email": "It's almost time to go. Are you coming?",
+      "reference_reply": "I'm game.",
+      "generated_reply": "Yes — I'll be there shortly.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "Directly and appropriately confirms attendance in response to 'Are you coming?'—concise, natural, and consistent with the reference."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 59,
+      "email": "I've been thinking about the art project you mentioned. Do you want to chat more about it?",
+      "reference_reply": "I'm not interested.",
+      "generated_reply": "I'd love to — when are you free to chat? We can do a call or meet in person, whichever works best for you.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 9,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The generated reply directly addresses the invitation to chat about the art project, contains no incorrect information, and politely proposes scheduling options. It differs in tone from the terse reference response (which declined), but that is acceptable given the incoming message; otherwise it is complete and appropriate."
+      },
+      "overall_score": 9.8
+    },
+    {
+      "id": 91,
+      "email": "We want to publish your article on Monday. How's your story coming?",
+      "reference_reply": "Yup I'm on it.",
+      "generated_reply": "Thanks — the story is coming along. I’ll send the final version as soon as it’s ready. If you need anything specific before Monday, let me know.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 9,
+        "tone": 10,
+        "reason": "Directly answers the status question, confirms the story is in progress, offers to send the final version, and asks if anything specific is needed before Monday. No incorrect claims and tone is polite; could be slightly more specific about timing."
+      },
+      "overall_score": 9.8
+    },
+    {
+      "id": 49,
+      "email": "His dad is in hospital. I think we should visit them.",
+      "reference_reply": "Awesome, let's do it!",
+      "generated_reply": "I'm sorry to hear that. When should we go?",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 9,
+        "completeness": 9,
+        "tone": 10,
+        "reason": "The reply is directly relevant and appropriate—expresses sympathy and asks when to go, which addresses the suggestion to visit. It contains no incorrect facts and uses a suitable tone. It is somewhat brief, so completeness and groundedness score slightly below perfect."
+      },
+      "overall_score": 9.6
+    },
+    {
+      "id": 89,
+      "email": "I'll call you when I get home. I can't hear you as there is someone playing loud music near me.",
+      "reference_reply": "She shouldn't do that.",
+      "generated_reply": "No problem — call me when you get home.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 9,
+        "completeness": 9,
+        "tone": 10,
+        "reason": "The reply directly addresses the sender's plan to call when they get home and is correct and polite. It aligns well with the incoming message (though it doesn't comment on the loud music, which is a minor omission). The response is consistent with context even though the provided reference had a different tone."
+      },
+      "overall_score": 9.6
+    },
+    {
+      "id": 113,
+      "email": "I'm not feeling great. I'm going to go to the doctor's office.",
+      "reference_reply": "Let me know what he says.",
+      "generated_reply": "Sorry to hear that—hope it's nothing serious. Please keep me posted on how it goes.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly responds to the sender's message with sympathy and a request to be updated; it contains no incorrect information and matches the context and tone of the reference."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 58,
+      "email": "My condition has gotten worse. I'm going to stay home today.",
+      "reference_reply": "We will be praying for you.",
+      "generated_reply": "I'm sorry to hear that. Rest and take care—let me know if you need anything or if I can help with work while you're out. Hope you feel better soon.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply acknowledges the sender's worsened condition, expresses sympathy, offers practical help (including covering work), and wishes a recovery. It's polite, concise, contains no incorrect claims, and appropriately addresses the main point."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 76,
+      "email": "It would be good to have a meeting. Will you be around this afternoon?",
+      "reference_reply": "I won't.",
+      "generated_reply": "Yes — I’ll be around this afternoon. What time works for you?",
+      "scores": {
+        "relevance": 10,
+        "correctness": 3,
+        "groundedness": 2,
+        "completeness": 10,
+        "tone": 9,
+        "reason": "The reply directly answers the request and asks for a meeting time (relevant, complete, and polite). However it contradicts the reference response, which stated unavailability, so it's not grounded in that context and may be incorrect relative to the reference."
+      },
+      "overall_score": 6.55
+    },
+    {
+      "id": 33,
+      "email": "We should get together and talk. When are you free?",
+      "reference_reply": "That works for me.",
+      "generated_reply": "Sounds good — what days and times work for you?",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 9,
+        "completeness": 9,
+        "tone": 10,
+        "reason": "Direct, polite reply that asks for availability and addresses the request; contains no incorrect information. Slightly more proactive than the brief reference response but still consistent with the context."
+      },
+      "overall_score": 9.6
+    },
+    {
+      "id": 126,
+      "email": "The kids started the new school year. I should have more time now.",
+      "reference_reply": "That's so awesome to hear!",
+      "generated_reply": "Great — glad to hear it. Let me know when you’d like to pick things back up.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply acknowledges the user's update, expresses a positive reaction, and invites them to resume when ready; it's accurate, context-appropriate, and politely phrased."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 60,
+      "email": "I started piano lessons recently. I can give you their contact if you want.",
+      "reference_reply": "Is she good?",
+      "generated_reply": "Yes, please — I'd love their contact info.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 9,
+        "completeness": 9,
+        "tone": 10,
+        "reason": "The reply directly accepts the offered contact info and is polite and natural. It makes no incorrect claims and fits the context. It could be slightly more complete by asking for specifics (phone/email) or expressing a brief thanks, hence a small deduction on groundedness/completeness."
+      },
+      "overall_score": 9.6
+    },
+    {
+      "id": 64,
+      "email": "I'm curious what they're working on. Can you look into that for me?",
+      "reference_reply": "I can't.",
+      "generated_reply": "Sure — I can look into that. Who exactly do you mean (which team or which people), and is there anything specific you want to know? I’ll check and get back to you with what I find.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 6,
+        "completeness": 9,
+        "tone": 10,
+        "reason": "The generated reply directly addresses the request, asks reasonable clarifying questions, and offers to follow up (relevant, complete, and polite). It makes no incorrect claims. It is less consistent with the provided reference response, which simply said 'I can't,' so groundedness is lower because the assistant here offers to perform the task rather than declining."
+      },
+      "overall_score": 9.0
+    },
+    {
+      "id": 111,
+      "email": "They said to cancel the meeting. I think they are just trying to pressure us.",
+      "reference_reply": "They're all mouth and no trousers.",
+      "generated_reply": "Don't let them pressure us. Do you want me to push back and insist we meet (or ask why), or should I accept the cancellation and propose a new date?",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 9,
+        "completeness": 9,
+        "tone": 9,
+        "reason": "The reply directly addresses the cancellation and the sender's suspicion, offers concrete options (push back or accept and reschedule), and makes no incorrect claims. It's consistent with the context though more collaborative than the terse reference; it could be slightly more decisive by recommending a preferred action."
+      },
+      "overall_score": 9.5
+    },
+    {
+      "id": 38,
+      "email": "I thought more about our discussion last week. Do you have time to talk?",
+      "reference_reply": "No need for it.",
+      "generated_reply": "Yes — I'd be happy to talk. When works for you and do you prefer a phone call or a video meeting? Send a couple of times that suit you and I'll confirm.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 9,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "Directly answers the ask to talk, offers meeting options and scheduling, is polite and natural. It differs from the brief reference reply ('No need for it') but is consistent with the incoming email's request."
+      },
+      "overall_score": 9.8
+    },
+    {
+      "id": 30,
+      "email": "I'm going to be in town this week. Do you want to meet up?",
+      "reference_reply": "Thanks for the confirmation.",
+      "generated_reply": "Yes — I'd love to. What day/time works best for you this week, and where would you like to meet?",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly accepts the invitation, asks about day/time and location, contains no incorrect claims, matches the context and tone, and sufficiently addresses the sender's question."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 108,
+      "email": "We are thinking about a group dinner next week. Would you be interested in joining?",
+      "reference_reply": "Yeah I don't know.",
+      "generated_reply": "Yes, I'd be interested. What day/time and where are you thinking?",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly answers the invitation (expresses interest) and asks appropriate follow-up questions about day/time/location. It makes no incorrect claims, fits the context, and is concise and polite."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 119,
+      "email": "I updated my presentation. Could you take a look and give me comments?",
+      "reference_reply": "It's not good.",
+      "generated_reply": "Sure—please share the updated file or a link and I’ll take a look and provide comments.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 9,
+        "tone": 10,
+        "reason": "The reply directly addresses the request, politely asks for the updated file or a link to review, contains no incorrect claims, and is consistent with the context. It could be slightly more complete by offering a timeframe or specifying what type of comments (content, design, flow) will be provided."
+      },
+      "overall_score": 9.8
+    },
+    {
+      "id": 2,
+      "email": "I am leaving the office now. I'll see you at the restaurant.",
+      "reference_reply": "Lol thx for the update.",
+      "generated_reply": "See you at the restaurant!",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 9,
+        "tone": 10,
+        "reason": "The reply directly acknowledges the sender's message and confirms the meeting. It contains no incorrect claims, matches the casual context, and is concise and appropriate (completeness slightly lower because it could include a brief thanks or acknowledgement of them leaving the office)."
+      },
+      "overall_score": 9.8
+    },
+    {
+      "id": 53,
+      "email": "I will be out of office for a month. Unfortunately, I'll have surgery next week.",
+      "reference_reply": "It's not a big deal.",
+      "generated_reply": "I'm sorry to hear that — wishing you a smooth surgery and a speedy recovery. Let me know if you'd like me to cover anything or if there's anything I can do while you're out. Please keep me posted.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly addresses the sender's surgery and absence, expresses appropriate sympathy, offers practical help while they're out, contains no incorrect claims, and uses a polite, supportive tone."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 22,
+      "email": "I got a new trainer. I think you should check them out as well.",
+      "reference_reply": "When is he available?",
+      "generated_reply": "Nice—congrats. Can you send their name or a link to their profile/contact info? I’ll take a look.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 9,
+        "tone": 10,
+        "reason": "The reply directly responds to the message by asking for the trainer's name or profile/link and offers to check them out. It's polite, contains no incorrect information, and is consistent with the context; it could be slightly more complete by also asking about availability or specific aspects to review."
+      },
+      "overall_score": 9.8
+    },
+    {
+      "id": 3,
+      "email": "I want to make a reservation for dinner. Do you prefer Italian or Japanese?",
+      "reference_reply": "Sure.",
+      "generated_reply": "Either works for me—pick whichever you prefer.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly answers the question by stating no preference and asking the sender to choose; it contains no factual errors, fits the context, fully addresses the request, and is polite and natural."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 24,
+      "email": "My report is due in a couple days. Can you give me some feedback on it?",
+      "reference_reply": "I do not have time.",
+      "generated_reply": "Sure — I can. Please send the report (or a link) and tell me what kind of feedback you want (structure, clarity, grammar, argument strength, etc.) and the exact deadline. I’ll review and get back to you before then.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 9,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly addresses the request, asks for the report and preferred feedback types and deadline, and promises to review—covering what’s needed without making any incorrect claims. It is polite and concise. (Slight note: the reference reply refused help, but the generated reply appropriately offers assistance given the user’s request.)"
+      },
+      "overall_score": 9.8
+    },
+    {
+      "id": 104,
+      "email": "We are thinking about setting up a meeting. Do you want to join?",
+      "reference_reply": "LOL.",
+      "generated_reply": "Yes—I’d like to join. When were you thinking of meeting?",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "Directly accepts the invitation and asks an appropriate follow-up (when), makes no incorrect claims, matches the email's context, and is polite and natural."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 100,
+      "email": "We need to talk. Could you meet with me tomorrow?",
+      "reference_reply": "Yeah.",
+      "generated_reply": "I can meet tomorrow. What time and where works best for you?",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly answers the request to meet tomorrow, states availability, and asks for time and location. It makes no incorrect claims, matches the context, is complete, and uses a polite, natural tone."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 117,
+      "email": "I spent some time with my sister today. We're planning to see each other again next week.",
+      "reference_reply": "That is so lovely!",
+      "generated_reply": "Nice — hope you two have a great time next week.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly acknowledges the sender's news, offers a friendly wish for their upcoming visit, contains no incorrect information, matches the positive tone of the reference, and sufficiently addresses the main point."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 88,
+      "email": "I need to check with my manager. I'll follow up tomorrow if that's fine with you.",
+      "reference_reply": "Sure, let me know what he says.",
+      "generated_reply": "Sounds good — that's fine. I'll look out for your update tomorrow.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "Concise, polite confirmation that a follow-up tomorrow is fine; aligns with incoming message and contains no incorrect information."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 121,
+      "email": "I went to the doctor's office earlier. They said I'm in good health.",
+      "reference_reply": "That's too bad.",
+      "generated_reply": "That's great news—so glad to hear you're in good health!",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly acknowledges the sender's good health, makes no incorrect claims, is consistent with the message context, fully addresses the main point, and uses a natural, positive tone."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 75,
+      "email": "I need my book back. Can I pass by your place this evening?",
+      "reference_reply": "Sure thing.",
+      "generated_reply": "Sure — what time this evening were you thinking?",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 9,
+        "tone": 10,
+        "reason": "Directly answers the request with a clear yes and asks a relevant follow-up (time). It could be slightly more complete by stating availability or proposing a time."
+      },
+      "overall_score": 9.8
+    },
+    {
+      "id": 87,
+      "email": "It would be nice to meet. Do any days this week work?",
+      "reference_reply": "S'all good.",
+      "generated_reply": "Yes — I'd love to. Which day and time this week work best for you? Any preferred location?",
+      "scores": {
+        "relevance": 9,
+        "correctness": 10,
+        "groundedness": 9,
+        "completeness": 9,
+        "tone": 9,
+        "reason": "The reply directly accepts the meeting and asks for preferred day/time and location, which addresses the sender's question. It makes no incorrect claims and is polite. It could be slightly more helpful by offering the responder's own availability, hence not a perfect 10 for completeness and relevance."
+      },
+      "overall_score": 9.25
+    },
+    {
+      "id": 83,
+      "email": "I'm busy now. Can we talk later?",
+      "reference_reply": "Yeah we can do that.",
+      "generated_reply": "Sure — when would you like to talk?",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly and politely responds to the request to talk later by asking when, contains no incorrect information, aligns with the message's context and tone, and sufficiently addresses the user's availability question."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 122,
+      "email": "Please take a look at the attached document. I'll check back in tomorrow.",
+      "reference_reply": "Have a fantastic evening!",
+      "generated_reply": "Thanks — I’ll review the attached document and get back to you. If I have any questions I’ll reach out before tomorrow; otherwise I’ll follow up when you check in.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly acknowledges the attached document, commits to reviewing it, offers to ask questions before tomorrow, and states a plan to follow up—concise, accurate, and appropriately polite."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 132,
+      "email": "I saw your presentation earlier. The question you got was hilarious.",
+      "reference_reply": "That was not right.",
+      "generated_reply": "I know — that question totally caught me off guard! Glad you enjoyed the presentation.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 9,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly acknowledges the sender's remark and is friendly and appropriate. It makes no incorrect claims and sufficiently responds to the comment; it's marginally more upbeat than the terse reference, so groundedness is rated slightly lower."
+      },
+      "overall_score": 9.8
+    },
+    {
+      "id": 21,
+      "email": "I left you some notes. Is everything clear?",
+      "reference_reply": "No it's not.",
+      "generated_reply": "Thanks — I received your notes. Everything looks clear to me; if there’s any specific point you want me to revisit, please let me know.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 9,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "Directly answers the question, politely confirms receipt and clarity, offers follow-up; no incorrect claims and fits the context (slightly different stance than the terse reference)."
+      },
+      "overall_score": 9.8
+    },
+    {
+      "id": 61,
+      "email": "Today was my last day at work. I'm going to miss everyone.",
+      "reference_reply": "That's good.",
+      "generated_reply": "I'm sorry to hear that — you'll be missed. Wishing you all the best in your next chapter; please keep in touch.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly addresses the sender leaving work with an empathetic, appropriate message, makes no incorrect claims, and sufficiently covers the main sentiment while maintaining a natural tone."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 72,
+      "email": "I'm going to submit the form tonight. Do you want me to update you after?",
+      "reference_reply": "Yeah, for sure.",
+      "generated_reply": "Yes please — I'd appreciate a quick update after you submit it. Thanks!",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "Directly and politely answers the question, requests the update requested, contains no incorrect information, and matches the tone and brevity of the reference."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 107,
+      "email": "I'm going to be in the area today. Will you be around?",
+      "reference_reply": "No.",
+      "generated_reply": "Yes—I’ll be around today. Would you like to meet? If so, what time works for you?",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 9,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The generated reply directly answers the question about availability, offers to meet, and asks for a time—addressing the sender's intent. It makes no invented claims beyond stating availability (which is what the sender asked). The tone is natural and polite. It differs from the terse reference ('No') but remains consistent with the incoming email's context and purpose."
+      },
+      "overall_score": 9.8
+    },
+    {
+      "id": 15,
+      "email": "I was looking through the catalog. Can you send me the offer for the blue one?",
+      "reference_reply": "Yeah if u want.",
+      "generated_reply": "Sure — I can send that. Could you tell me which catalog item (page or SKU) you mean and what quantity you need? Also let me know if you’d like pricing to include shipping/tax or just the unit price. I’ll prepare the offer as soon as I have those details. Thanks!",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly answers the request, politely asks for necessary clarifications (which item exactly, quantity, and pricing options), makes no incorrect claims, and commits to preparing the offer once details are provided."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 93,
+      "email": "Thanks for sending the report. This is very helpful.",
+      "reference_reply": "I am sure that is true.",
+      "generated_reply": "You're welcome — glad it was helpful. If you need any changes or additional details, just let me know.",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 10,
+        "completeness": 10,
+        "tone": 10,
+        "reason": "The reply directly responds to the thank-you, is accurate and offers follow-up help, matches the context and tone, and is polite and concise."
+      },
+      "overall_score": 10.0
+    },
+    {
+      "id": 103,
+      "email": "I've got some good news. I got the promotion.",
+      "reference_reply": "How did that happen?",
+      "generated_reply": "Amazing—congratulations on the promotion!",
+      "scores": {
+        "relevance": 10,
+        "correctness": 10,
+        "groundedness": 9,
+        "completeness": 9,
+        "tone": 10,
+        "reason": "The reply directly acknowledges the promotion and offers congratulations (relevant, correct, and polite). It differs from the reference's curious follow-up question but remains an appropriate, grounded response; could be slightly more complete by asking a follow-up question."
+      },
+      "overall_score": 9.6
+    }
+  ]
+}
