@@ -6,7 +6,7 @@ from pathlib import Path
 
 # Project paths
 BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_FILE = BASE_DIR / "data" / "pairs.csv"
+DATA_FILE = BASE_DIR / "data" / "retrieval_pairs.csv"
 
 
 print("Loading email-response dataset...")
