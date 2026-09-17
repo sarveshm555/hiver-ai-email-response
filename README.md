@@ -66,6 +66,7 @@ The system uses:
 
 Architecture:
 
+```
 Incoming Email
     |
     v
@@ -85,6 +86,7 @@ Generated Suggested Reply
     |
     v
 Evaluation
+```
 
 ## 5. Retrieval
 
@@ -100,7 +102,7 @@ For each incoming email, the system retrieves the top 3 most similar historical 
 
 The challenge allows prompting, RAG/retrieval, few-shot examples, fine-tuning, or a combination.
 
-I chose RAG because the dataset is small.
+RAG was chosen because the dataset is small.
 
 Advantages:
 - No model training is required.
@@ -109,7 +111,7 @@ Advantages:
 - Provides concrete examples to guide generation.
 - Allows the LLM to generate a new response rather than simply selecting an existing reply.
 
-Fine-tuning was not selected because 132 unique pairs provide limited training data and fine-tuning would add unnecessary complexity for this prototype.
+Fine-tuning was not selected because 132 unique pairs provide limited training data, and fine-tuning would add unnecessary complexity for this prototype.
 
 ## 7. Generative Model
 
@@ -158,28 +160,30 @@ Each generated response is evaluated from 0 to 10 across five dimensions:
 
 The final score is:
 
+```
 Overall Score =
-0.25 × Relevance +
-0.25 × Correctness +
-0.20 × Groundedness +
-0.20 × Completeness +
-0.10 × Tone
+    0.25 × Relevance +
+    0.25 × Correctness +
+    0.20 × Groundedness +
+    0.20 × Completeness +
+    0.10 × Tone
+```
 
 ### Why these metrics?
 
-**Relevance (25%)**  
+**Relevance (25%)**
 Checks whether the response addresses the incoming email.
 
-**Correctness (25%)**  
+**Correctness (25%)**
 Checks whether the response avoids incorrect claims and invented facts.
 
-**Groundedness (20%)**  
+**Groundedness (20%)**
 Checks whether the response is supported by the incoming email and retrieved context.
 
-**Completeness (20%)**  
+**Completeness (20%)**
 Checks whether the response sufficiently addresses the main point.
 
-**Tone (10%)**  
+**Tone (10%)**
 Checks whether the response is natural, polite, and appropriate.
 
 Correctness and relevance receive the highest weights because a fluent response that is incorrect or unrelated is not useful.
@@ -193,7 +197,7 @@ An LLM judge evaluates each generated response using:
 
 The reference reply is used as a comparison point, not as an exact-match target.
 
-The generated response does not need to reproduce the reference word-for-word because multiple valid responses can exist.
+The generated response does not need to reproduce the reference word-for-word, because multiple valid responses can exist.
 
 The evaluator produces per-response scores and a short explanation.
 
@@ -230,11 +234,11 @@ A stronger future evaluation would compare LLM-judge scores against human rating
 
 One observed failure involved a scheduling email:
 
-Incoming email:
-"It would be good to have a meeting. Will you be around this afternoon?"
+**Incoming email:**
+> "It would be good to have a meeting. Will you be around this afternoon?"
 
-Generated response:
-"Yes — I’ll be around this afternoon. What time works for you?"
+**Generated response:**
+> "Yes — I'll be around this afternoon. What time works for you?"
 
 The evaluation judge gave this response a lower score because the reference response indicated that the sender would not be available.
 
@@ -244,26 +248,28 @@ A production system should be more conservative about unsupported commitments in
 
 ## 14. Project Structure
 
+```
 hiver-ai-email-response/
-|
+│
 ├── data/
 │   ├── pairs.csv
 │   ├── retrieval_pairs.csv
 │   └── test_pairs.csv
-|
+│
 ├── results/
 │   └── evaluation.json
-|
+│
 ├── src/
 │   ├── prepare_data.py
 │   ├── split_data.py
 │   ├── retrieve.py
 │   ├── generate.py
 │   └── evaluate.py
-|
+│
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+```
 
 The original raw dataset is intentionally not committed to the public repository.
 
@@ -274,51 +280,59 @@ Clone the repository:
 ```bash
 git clone https://github.com/sarveshm555/hiver-ai-email-response.git
 cd hiver-ai-email-response
-
-## 16. Installation
-
-Clone the repository:
-
-    git clone https://github.com/sarveshm555/hiver-ai-email-response.git
-    cd hiver-ai-email-response
+```
 
 Install dependencies:
 
-    pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 Create a `.env` file:
 
-    OPENAI_API_KEY=your_api_key_here
+```
+OPENAI_API_KEY=your_api_key_here
+```
 
 Never commit the `.env` file.
 
-## 17. Running the System
+## 16. Running the System
 
 Prepare the dataset:
 
-    python src/prepare_data.py
+```bash
+python src/prepare_data.py
+```
 
 Create the retrieval/test split:
 
-    python src/split_data.py
+```bash
+python src/split_data.py
+```
 
 Test retrieval:
 
-    python src/retrieve.py
+```bash
+python src/retrieve.py
+```
 
 Generate a suggested response:
 
-    python src/generate.py
+```bash
+python src/generate.py
+```
 
 Run the evaluation:
 
-    python src/evaluate.py
+```bash
+python src/evaluate.py
+```
 
 The evaluation results are written to:
 
-    results/evaluation.json
+`results/evaluation.json`
 
-## 18. Technology Stack
+## 17. Technology Stack
 
 - Python
 - Pandas
@@ -328,7 +342,7 @@ The evaluation results are written to:
 - OpenAI API
 - python-dotenv
 
-## 19. Design Trade-offs
+## 18. Design Trade-offs
 
 ### RAG vs Fine-tuning
 
@@ -346,7 +360,7 @@ The LLM generates a new response instead of directly returning a retrieved reply
 
 An LLM judge allows multiple dimensions of response quality to be evaluated instead of relying on exact string matching. However, automated judging is not equivalent to human ground truth and should be validated further with human evaluation.
 
-## 20. Limitations
+## 19. Limitations
 
 The current prototype has several limitations:
 
@@ -359,7 +373,7 @@ The current prototype has several limitations:
 
 Therefore, the current score should be treated as an evaluation signal for this prototype rather than a production accuracy guarantee.
 
-## 21. Future Improvements
+## 20. Future Improvements
 
 - Build or obtain a larger customer-support-specific email dataset.
 - Add human evaluation of generated responses.
@@ -370,13 +384,13 @@ Therefore, the current score should be treated as an evaluation signal for this 
 - Add privacy and PII filtering for real-world email data.
 - Add production monitoring and user feedback.
 
-## 22. AI Tools Used
+## 21. AI Tools Used
 
 AI coding assistants were used during development for code generation, debugging, explanation, and iteration.
 
 The generated code was reviewed, tested, and modified during development.
 
-## 23. Conclusion
+## 22. Conclusion
 
 This project demonstrates an end-to-end Gen-AI email suggested-response system using retrieval-augmented generation.
 
